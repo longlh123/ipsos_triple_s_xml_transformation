@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sss version="1.2">
+  <date>25 September 2023</date>
+  <time>01:06</time>
+  <origin>Hermes v2</origin>
+  <user>dang Nguyen</user>
+  <survey>
+    <name>selfserve/591/230951</name>
+    <version>87</version>
+    <title>INV125119 - Insurance Brand Survey</title>
+    <record ident="a">
+      <variable ident="1" type="quantity" use="serial">
+        <name>record</name>
+        <label>Record number</label>
+        <position finish="7" start="1"/>
+        <values>
+          <range from="1" to="9999999"/>
+        </values>
+      </variable>
+      
+      <variable ident="2" type="character">
+        <name>uuid</name>
+        <label>Participant identifier</label>
+        <position finish="23" start="8"/>
+        <size>16</size>
+      </variable>
+      
+      <variable ident="3" type="character">
+        <name>date</name>
+        <label>Completion time and date</label>
+        <position finish="39" start="24"/>
+        <size>16</size>
+      </variable>
+      
+      <variable ident="4" type="character">
+        <name>markers</name>
+        <label>Acquired markers</label>
+        <position finish="103" start="40"/>
+        <size>64</size>
+      </variable>
+      
+      <variable ident="5" type="single">
+        <name>status</name>
+        <label>Participant status</label>
+        <position finish="104" start="104"/>
+        <values>
+          <value code="1">Terminated</value>
+          <value code="2">Overquota</value>
+          <value code="3">Qualified</value>
+          <value code="4">Partial</value>
+        </values>
+      </variable>
+      
+      <variable ident="6" type="single">
+        <name>sversion</name>
+        <label>Survey Version tracker</label>
+        <position finish="105" start="105"/>
+        <values>
+          <value code="1">Initial survey version</value>
+          <value code="2">XX/XX - YY:YY - List changes</value>
+        </values>
+      </variable>
+      
+      <variable ident="7" type="single">
+        <name>speeder</name>
+        <label>Speeder flag</label>
+        <position finish="106" start="106"/>
+        <values>
+          <value code="1">Pass</value>
+          <value code="2">Fail</value>
+        </values>
+      </variable>
+      
+      <variable ident="8" type="single">
+        <name>INTRO</name>
+        <label>Xin chào bạn, IPSOS là một trong những công ty chuyên nghiệp về nghiên cứu thị trường tại Việt Nam. Chúng tôi hiện đang tiến hành cuộc thăm dò ý kiến trong vòng 10-15 phút về sức khỏe, quan điểm sống, bảo hiểm và tài chính.
+  Những thông tin bạn cung cấp cho chúng tôi để hoàn tất bản câu hỏi này sẽ được bảo mật và chỉ được dùng cho mục đích nghiên cứu thị trường. Những thông tin này cũng sẽ không được cung cấp cho bất kì một bên nào khác khi chưa có sự cho phép của bạn.
+  Ngược lại, bạn không thảo luận, trao đổi, tiết lộ cho bất kỳ người nào (bao gồm bạn bè và người thân) về tất cả những thông tin liên quan đến sản phẩm thử, khái niệm, ý tưởng, nội dung được đề cập trong cuộc khảo sát.
+  Chúng tôi rất mong Bạn dành chút thời gian cho khảo sát này.</label>
+        <position finish="107" start="107"/>
+        <values>
+          <value code="1">Đồng ý</value>
+          <value code="2">Không, tôi từ chối tham gia khảo sát</value>
+        </values>
+      </variable>
+      
+      <variable ident="9" type="quantity">
+        <name>S1a</name>
+        <label>Bạn sinh năm mấy? Ghi rõ:</label>
+        <position finish="126" start="108"/>
+        <values>
+          <range from="1924" to="2023"/>
+        </values>
+      </variable>
+      
+      <variable ident="10" type="single">
+        <name>D_S1a</name>
+        <label>HIDDEN TO PUNCH AGE BRACKETS</label>
+        <position finish="127" start="127"/>
+        <values>
+          <value code="1">Dưới 18 tuổi</value>
+          <value code="2">18 – 24</value>
+          <value code="3">25 – 34</value>
+          <value code="4">35 – 44</value>
+          <value code="5">45 – 55</value>
+          <value code="6">56 - 65</value>
+          <value code="7">Trên 65 tuổi</value>
+        </values>
+      </variable>
+      
+      <variable ident="11" type="single">
+        <name>S1b</name>
+        <label>Bạn là...</label>
+        <position finish="128" start="128"/>
+        <values>
+          <value code="1">Nam</value>
+          <value code="2">Nữ</value>
+        </values>
+      </variable>
+      
+      <variable ident="12" type="single">
+        <name>S1c</name>
+        <label>Nơi bạn đang sinh sống?</label>
+        <position finish="129" start="129"/>
+        <values>
+          <value code="1">Hà Nội</value>
+          <value code="2">Hồ Chí Minh</value>
+          <value code="3">Khác</value>
+        </values>
+      </variable>
+      
+      <variable ident="13" type="single">
+        <name>S1d</name>
+        <label>Thu nhập hàng tháng sau thuế của cả hộ gia đình bạn, bao gồm tất cả các nguồn như: lương, thưởng, trợ cấp, và các thu nhập khác là khoảng bao nhiêu?</label>
+        <position finish="131" start="130"/>
+        <values>
+          <value code="1">Ít hơn 8,000,000 VND</value>
+          <value code="2">8,000,000 - 10,000,000 VND</value>
+          <value code="3">10,000,001 - 16,000,000 VND</value>
+          <value code="4">16,000,001 - 20,000,000 VND</value>
+          <value code="5">20,000,001 - 25,000,000 VND</value>
+          <value code="6">25,000,001 - 30,000,000 VND</value>
+          <value code="7">30,000,001 - 45,000,000 VND</value>
+          <value code="8">45,000,001 - 50,000,000 VND</value>
+          <value code="10">50,000,001 - 75,000,000 VND</value>
+          <value code="11">75,000,001 - 110,000,000 VND</value>
+          <value code="12">Trên 110,000,000 VND</value>
+          <value code="99">Từ chối</value>
+        </values>
+      </variable>
+      
+      <variable ident="14" type="single">
+        <name>S5_1</name>
+        <label>Bạn có đang sở hữu hợp đồng bảo hiểm nhân thọ không? Bảo hiểm nhân thọ bao gồm các loại bảo hiểm trọn đời, bảo hiểm tích lũy/ tiết kiệm, bảo hiểm liên kết đầu tư, bảo hiểm y tế/ tai nạn/ bệnh hiểm nghèo/bảo hiểm học vấn cho con, hoặc bảo hiểm hưu trí do các công ty bảo hiểm nhân thọ phát hành?</label>
+        <position finish="132" start="132"/>
+        <values>
+          <value code="1">Tôi đã sở hữu và có ý định mua thêm trong 6 tháng tới</value>
+          <value code="2">Tôi đã sở hữu và không có ý định mua thêm trong 6 tháng tới</value>
+          <value code="3">Tôi chưa sở hữu nhưng có ý định mua trong 6 tháng tới</value>
+          <value code="4">Tôi chưa sở hữu và không có ý định mua trong 6 tháng tới</value>
+        </values>
+      </variable>
+      
+      <variable ident="15" type="single">
+        <name>S6a</name>
+        <label>Câu nào sau đây mô tả đúng nhất vai trò của bạn trong việc tham gia các quyết định liên quan đến tài chính trong gia đình</label>
+        <position finish="133" start="133"/>
+        <values>
+          <value code="1">Tôi là người quyết định chính</value>
+          <value code="2">Tôi và người khác trong gia đình cùng quyết định nhưng tôi là người quyết định cuối cùng</value>
+          <value code="3">Tôi và người khác trong gia đình cùng quyết định nhưng người khác là người quyết định cuối cùng</value>
+          <value code="4">Tôi không tham gia quyết định</value>
+        </values>
+      </variable>
+      
+      <variable ident="16" type="multiple">
+        <name>Q1</name>
+        <label>Bạn biết công ty bảo hiểm nhân thọ nào sau đây?</label>
+        <position finish="153" start="134"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">Khác, ghi rõ</value>
+          <value code="19">Khác, ghi rõ</value>
+          <value code="20">Khác, ghi rõ</value></values>
+      </variable>
+      
+      <variable ident="17" type="multiple">
+        <name>Q1B</name>
+        <label>Bạn cân nhắc sẽ mua sản phẩm bảo hiểm nhân thọ của công ty nào?</label>
+        <position finish="174" start="154"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không có công ty nào kể trên</value></values>
+      </variable>
+      
+      <variable ident="18" type="multiple">
+        <name>Q1B_1</name>
+        <label>Bạn dự định sẽ mua bảo hiểm nhân thọ qua kênh nào?</label>
+        <position finish="176" start="175"/>
+        <values>
+          <value code="1">Đại lý của công ty bảo hiểm</value>
+          <value code="2">Ngân hàng có bán bảo hiểm</value></values>
+      </variable>
+      
+      <variable ident="19" type="multiple">
+        <name>Q1C</name>
+        <label>Bạn đang sở hữu hợp đồng bảo hiểm nhân thọ của công ty nào dưới đây? Không tính hợp đồng bảo hiểm nhân thọ mà công ty mua cho bạn.</label>
+        <position finish="196" start="177"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value></values>
+      </variable>
+      
+      <variable ident="20" type="multiple">
+        <name>Q1C_1</name>
+        <label>Bạn đã mua bảo hiểm nhân thọ qua kênh nào?</label>
+        <position finish="198" start="197"/>
+        <values>
+          <value code="1">Đại lý của công ty bảo hiểm</value>
+          <value code="2">Ngân hàng có bán bảo hiểm</value></values>
+      </variable>
+      
+      <variable ident="21" type="multiple">
+        <name>Q2r1</name>
+        <label>Là công ty BHNT phổ biến, được nhiều người biết đến - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="219" start="199"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="22" type="multiple">
+        <name>Q2r2</name>
+        <label>Là công ty BHNT được mọi người giới thiệu - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="240" start="220"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="23" type="multiple">
+        <name>Q2r3</name>
+        <label>Là công ty BHNT uy tín - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="261" start="241"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="24" type="multiple">
+        <name>Q2r4</name>
+        <label>Công ty BHNT kết hợp với đối tác ngân hàng uy tín - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="282" start="262"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="25" type="multiple">
+        <name>Q2r5</name>
+        <label>Thủ tục đăng ký và sử dụng nhanh chóng - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="303" start="283"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="26" type="multiple">
+        <name>Q2r6</name>
+        <label>Dễ dàng liên hệ, nhận tư vấn, hỗ trợ khi cần - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="324" start="304"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="27" type="multiple">
+        <name>Q2r7</name>
+        <label>Có nhiều sản phẩm và dịch vụ đáp ứng được nhu cầu của tôi - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="345" start="325"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="28" type="multiple">
+        <name>Q2r8</name>
+        <label>Sản phẩm, giải pháp minh bạch, dễ hiểu - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="366" start="346"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="29" type="multiple">
+        <name>Q2r9</name>
+        <label>Công ty BHNT có các sản phẩm nổi trội với giải pháp dẫn đầu thị trường - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="387" start="367"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="30" type="multiple">
+        <name>Q2r10</name>
+        <label>Thực hiện đúng cam kết với khách hàng - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="408" start="388"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="31" type="multiple">
+        <name>Q2r11</name>
+        <label>Công ty có mức phí đóng BHNT hợp lí - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="429" start="409"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="32" type="multiple">
+        <name>Q2r12</name>
+        <label>Lãi suất đầu tư cao hơn sản phẩm của các công ty khác - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="450" start="430"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="33" type="multiple">
+        <name>Q2r13</name>
+        <label>Thuận tiện giao dịch trên ứng dụng di động thay vì phải đến chi nhánh/đại lý - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="471" start="451"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="34" type="multiple">
+        <name>Q2r14</name>
+        <label>Có nhiều chương trình, ưu đãi hấp dẫn khi mua/đóng phí bảo hiểm - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="492" start="472"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="35" type="multiple">
+        <name>Q2r15</name>
+        <label>Đội ngũ tư vấn chuyên nghiệp, am hiểu sản phẩm và nhu cầu của tôi - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="513" start="493"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="36" type="multiple">
+        <name>Q2r16</name>
+        <label>Công ty BHNT này xử lý các vấn đề của tôi nhanh chóng và hiệu quả - Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</label>
+        <position finish="534" start="514"/>
+        <values>
+          <value code="1">AIA</value>
+          <value code="2">Bảo Việt</value>
+          <value code="3">BIDV Metlife</value>
+          <value code="4">Cathay Life</value>
+          <value code="5">Chubb</value>
+          <value code="6">Dai-ichi Life</value>
+          <value code="7">Fubon</value>
+          <value code="8">FWD</value>
+          <value code="9">Generali</value>
+          <value code="10">Hanwha Life</value>
+          <value code="11">Manulife</value>
+          <value code="12">MB Ageas Life</value>
+          <value code="13">Mirae Asset Prévoir</value>
+          <value code="14">Phú Hưng</value>
+          <value code="15">Prudential</value>
+          <value code="16">Shinhan Life</value>
+          <value code="17">Sun Life</value>
+          <value code="18">${Q1.r971.open}</value>
+          <value code="19">${Q1.r972.open}</value>
+          <value code="20">${Q1.r973.open}</value>
+          <value code="21">Không biết/ không có</value></values>
+      </variable>
+      
+      <variable ident="37" type="multiple">
+        <name>P5</name>
+        <label>Khi cân nhắc mua các sản phẩm bảo hiểm nhân thọ, bạn thường thu thập thông tin qua những nguồn nào sau đây?</label>
+        <position finish="553" start="535"/>
+        <values>
+          <value code="1">Gia đình/ người thân</value>
+          <value code="2">Bạn bè</value>
+          <value code="3">Quảng cáo, tin tức trên Tivi</value>
+          <value code="4">Báo/ tạp chí giấy</value>
+          <value code="5">Đại lý/ nhân viên tư vấn bảo hiểm</value>
+          <value code="6">Nhân viên ngân hàng tư vấn về bảo hiểm</value>
+          <value code="7">Tổng đài (hotline) của công ty bảo hiểm</value>
+          <value code="8">Email/ tin nhắn từ công ty bảo hiểm về khuyến mãi hoặc quảng cáo sản phẩm mới</value>
+          <value code="9">Tham dự sự kiện của công ty bảo hiểm (ví dụ: hội thảo,...)</value>
+          <value code="10">Tờ quảng cáo, tờ rơi của công ty bảo hiểm</value>
+          <value code="11">Trang web của công ty bảo hiểm nhân thọ (Dạo lướt/ tương tác/ liên hệ qua tin nhắn online)</value>
+          <value code="12">Blogs (nhật ký online) (vd: blogs tài chính, blogs cá nhân, blogs công ty,….)</value>
+          <value code="13">Tìm kiếm thông tin trên internet, ví dụ: Google</value>
+          <value code="14">Báo/ tạp chí online</value>
+          <value code="15">Trang thông tin khách hàng online</value>
+          <value code="16">Facebook chính thức của công ty bảo hiểm</value>
+          <value code="17">Ý kiến thảo luận trên các mạng xã hội (ví dụ: Facebook, Instagram, Twitter, …) / diễn đàn online</value>
+          <value code="18">Facebook chính thức của ngân hàng có phân phối bảo hiểm</value>
+          <value code="19">Khác, ghi rõ</value></values>
+      </variable>
+      
+      <variable ident="38" type="single">
+        <name>P6</name>
+        <label>Và đâu là nguồn thông tin quan trọng nhất ảnh hưởng đến quyết định mua BHNT của bạn?</label>
+        <position finish="555" start="554"/>
+        <values>
+          <value code="1">Gia đình/ người thân</value>
+          <value code="2">Bạn bè</value>
+          <value code="3">Quảng cáo, tin tức trên Tivi</value>
+          <value code="4">Báo/ tạp chí giấy</value>
+          <value code="5">Đại lý/ nhân viên tư vấn bảo hiểm</value>
+          <value code="6">Nhân viên ngân hàng tư vấn về bảo hiểm</value>
+          <value code="8">Tổng đài (hotline) của công ty bảo hiểm</value>
+          <value code="9">Email/ tin nhắn từ công ty bảo hiểm về khuyến mãi hoặc quảng cáo sản phẩm mới</value>
+          <value code="10">Tham dự sự kiện của công ty bảo hiểm (ví dụ: hội thảo,...)</value>
+          <value code="11">Tờ quảng cáo, tờ rơi của công ty bảo hiểm</value>
+          <value code="12">Trang web của công ty bảo hiểm nhân thọ (Dạo lướt/ tương tác/ liên hệ qua tin nhắn online)</value>
+          <value code="13">Blogs (nhật ký online) (vd: blogs tài chính, blogs cá nhân, blogs công ty,….)</value>
+          <value code="15">Tìm kiếm thông tin trên internet, ví dụ: Google</value>
+          <value code="16">Báo/ tạp chí online</value>
+          <value code="17">Trang thông tin khách hàng online</value>
+          <value code="18">Facebook chính thức của công ty bảo hiểm</value>
+          <value code="19">Ý kiến thảo luận trên các mạng xã hội (ví dụ: Facebook, Instagram, Twitter, …) / diễn đàn online</value>
+          <value code="20">Facebook chính thức của ngân hàng có phân phối bảo hiểm</value>
+          <value code="97">${P5.r97.open}</value>
+        </values>
+      </variable>
+      
+      <variable ident="39" type="multiple">
+        <name>S1g</name>
+        <label>Bạn hiện đang sử dụng dịch vụ của ngân hàng nào dưới đây?</label>
+        <position finish="565" start="556"/>
+        <values>
+          <value code="1">Techcombank</value>
+          <value code="2">ACB</value>
+          <value code="3">Vietcombank</value>
+          <value code="4">BIDV</value>
+          <value code="5">MB</value>
+          <value code="6">VPBank</value>
+          <value code="7">VietinBank</value>
+          <value code="8">Sacombank</value>
+          <value code="9">Ngân hàng khác (Ghi rõ....)</value>
+          <value code="10">Tôi hiện không sử dụng ngân hàng nào</value></values>
+      </variable>
+      
+      <variable ident="40" type="single">
+        <name>S1h</name>
+        <label>Vậy đâu là ngân hàng mà bạn giao dịch thường xuyên nhất trong 3 tháng qua?</label>
+        <position finish="567" start="566"/>
+        <values>
+          <value code="1">Techcombank</value>
+          <value code="2">ACB</value>
+          <value code="3">Vietcombank</value>
+          <value code="4">BIDV</value>
+          <value code="5">MB</value>
+          <value code="7">VPBank</value>
+          <value code="8">VietinBank</value>
+          <value code="9">Sacombank</value>
+          <value code="97">${S1g.r97.open}</value>
+        </values>
+      </variable>
+      
+      <variable ident="41" type="multiple">
+        <name>K1</name>
+        <label>Đâu là lý do khiến bạn không mua/ không dự định mua thêm bảo hiểm nhân thọ?</label>
+        <position finish="571" start="568"/>
+        <values>
+          <value code="1">Không có nhu cầu</value>
+          <value code="2">Không tin tưởng công ty bảo hiểm</value>
+          <value code="3">Thông tin sản phẩm thiếu minh bạch</value>
+          <value code="4">Khác (Ghi rõ):</value></values>
+      </variable>
+      
+      <variable ident="42" type="single">
+        <name>T1</name>
+        <label>Bạn có biết hiện tại Manulife và Techcombank đang có mô hình cộng tác với nhau không?</label>
+        <position finish="573" start="572"/>
+        <values>
+          <value code="1">Có</value>
+          <value code="2">Không</value>
+          <value code="99">Không rõ</value>
+        </values>
+      </variable>
+      
+      <variable ident="43" type="single">
+        <name>T2</name>
+        <label>Việc hợp tác giữa Manulife và Techcombank có ảnh hưởng tới quyết định tham gia sản phẩm bảo hiểm của bạn khi phải giao dịch thông qua đội ngũ tư vấn của Techcombank không?</label>
+        <position finish="575" start="574"/>
+        <values>
+          <value code="1">Có</value>
+          <value code="2">Không</value>
+          <value code="99">Không quan tâm</value>
+        </values>
+      </variable>
+      
+      <variable ident="44" type="multiple">
+        <name>T3</name>
+        <label>Trong các lý do sau, đâu là rào cản làm bạn băn khoăn khi lựa chọn mua bảo hiểm Manulife thông qua Techcombank?</label>
+        <position finish="585" start="576"/>
+        <values>
+          <value code="1">Không phải rào cản đối với tôi</value>
+          <value code="2">Lo lắng về uy tín thương hiệu Manulife</value>
+          <value code="3">Nhân viên không am hiểu về sản phẩm chuyên sâu như đại lý bảo hiểm</value>
+          <value code="4">Tính năng, sản phẩm của Manulife chưa cạnh tranh</value>
+          <value code="5">Nhân viên chưa có kỹ năng tư vấn theo nhu cầu cá nhân như đại lý bảo hiểm</value>
+          <value code="6">Không có nhiều sự lựa chọn về gói sản phẩm bảo hiểm và gói sản phẩm phụ</value>
+          <value code="7">Lo lắng về việc chăm sóc sau bán không tốt bằng đại lý bảo hiểm</value>
+          <value code="8">Chất lượng dịch vụ sau bán của Manulife chưa đáp ứng kỳ vọng</value>
+          <value code="9">Quy trình tham gia bảo hiểm của Manulife phức tạp</value>
+          <value code="10">Khác, ghi rõ</value></values>
+      </variable>
+      
+      <variable ident="45" type="single">
+        <name>A4r1</name>
+        <label>Thăng tiến trong công việc - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="586" start="586"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="46" type="single">
+        <name>A4r2</name>
+        <label>Đảm bảo việc làm/ đảm bảo nguồn thu nhập ổn định - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="587" start="587"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="47" type="single">
+        <name>A4r3</name>
+        <label>Dành thời gian cho gia đình - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="588" start="588"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="48" type="single">
+        <name>A4r4</name>
+        <label>Có thêm nguồn thu nhập phụ để trang trải các chi phí gia tăng - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="589" start="589"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="49" type="single">
+        <name>A4r5</name>
+        <label>Thành lập công ty riêng - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="590" start="590"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="50" type="single">
+        <name>A4r6</name>
+        <label>Sẵn sàng để nghỉ hưu/ có kế hoạch nghỉ hưu - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="591" start="591"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="51" type="single">
+        <name>A4r7</name>
+        <label>Có lối sống lành mạnh (khỏe mạnh &amp; năng động ) - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="592" start="592"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="52" type="single">
+        <name>A4r8</name>
+        <label>Mua các tài sản lớn như xe hơi/ nhà cửa/ đất đai / xây sửa nhà cửa - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="593" start="593"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="53" type="single">
+        <name>A4r9</name>
+        <label>Kết hôn - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="594" start="594"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="54" type="single">
+        <name>A4r10</name>
+        <label>Có con/ có thêm con - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="595" start="595"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="55" type="single">
+        <name>A4r11</name>
+        <label>Học tiếp bậc học cao hơn - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="596" start="596"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="56" type="single">
+        <name>A4r12</name>
+        <label>Chuẩn bị quỹ tiền cho việc học của con (ví dụ. học đại học, đi du học) - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="597" start="597"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="57" type="single">
+        <name>A4r13</name>
+        <label>Trả hết nợ và không còn khoản vay nào nữa (nếu có) - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="598" start="598"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="58" type="single">
+        <name>A4r14</name>
+        <label>Đi du lịch thường xuyên hơn - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="599" start="599"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="59" type="single">
+        <name>A4r15</name>
+        <label>Có nhiều tiền tiết kiệm - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="600" start="600"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="60" type="single">
+        <name>A4r16</name>
+        <label>Chuyển nhà lên các thành phố lớn ở Việt Nam - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="601" start="601"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="61" type="single">
+        <name>A4r17</name>
+        <label>Định cư nước ngoài - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="602" start="602"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="62" type="single">
+        <name>A4r97</name>
+        <label>Khác, ghi rõ - Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</label>
+        <position finish="603" start="603"/>
+        <values>
+          <value code="1">Mục tiêu lớn nhất</value>
+          <value code="2">Mục tiêu thứ 2</value>
+          <value code="3">Mục tiêu thứ 3</value>
+        </values>
+      </variable>
+      
+      <variable ident="63" type="multiple">
+        <name>noanswerA4_r99</name>
+        <label>Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.:</label>
+        <position finish="604" start="604"/>
+        <values>
+          <value code="1">Không có ưu tiên gì ngoài việc sống cho hiện tại</value></values>
+      </variable>
+      
+      <variable ident="64" type="single">
+        <name>A51</name>
+        <label>Lo lắng về vấn đề tài chính (ví dụ. không có khoản tiết kiệm, không thể trả nợ) - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="605" start="605"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="65" type="single">
+        <name>A52</name>
+        <label>Thiên tai (hạn hán, lũ lụt, bão, nước mặn,…) - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="606" start="606"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="66" type="single">
+        <name>A53</name>
+        <label>Rủi ro bất trắc (tai nạn, đột tử, mắc bệnh hiểm nghèo..) - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="607" start="607"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="67" type="single">
+        <name>A54</name>
+        <label>Lo lắng về vấn đề sức khỏe của bản thân - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="608" start="608"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="68" type="single">
+        <name>A512</name>
+        <label>Lo lắng về vấn đề sức khỏe của vợ/chồng - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="609" start="609"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="69" type="single">
+        <name>A55</name>
+        <label>Lo lắng sức khỏe của cha mẹ - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="610" start="610"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="70" type="single">
+        <name>A56</name>
+        <label>Không ai chăm sóc khi tôi lớn tuổi - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="611" start="611"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="71" type="single">
+        <name>A57</name>
+        <label>Không ai chăm sóc cha mẹ tôi khi họ lớn tuổi - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="612" start="612"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="72" type="single">
+        <name>A58</name>
+        <label>Sự an toàn và sức khỏe của con cái - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="613" start="613"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="73" type="single">
+        <name>A59</name>
+        <label>Con cái không hưởng được nền giáo dục đầy đủ - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="614" start="614"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="74" type="single">
+        <name>A510</name>
+        <label>Lo sợ sẽ bị mất việc/ mất thu nhập - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="615" start="615"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="75" type="single">
+        <name>A511</name>
+        <label>Lo lắng khủng hoảng kinh tế/ lạm phát – đồng tiền mất giá - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="616" start="616"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="76" type="single">
+        <name>A513</name>
+        <label>Thiệt hại về tài sản (mất mát, hư hỏng,... ) - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="617" start="617"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="77" type="single">
+        <name>A5r97</name>
+        <label>Khác, ghi rõ - Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</label>
+        <position finish="618" start="618"/>
+        <values>
+          <value code="1">Lo lắng nhất</value>
+          <value code="2">Lo lắng thứ hai</value>
+          <value code="3">Lo lắng thứ ba</value>
+        </values>
+      </variable>
+      
+      <variable ident="78" type="multiple">
+        <name>noanswerA5_r99</name>
+        <label>Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.:</label>
+        <position finish="619" start="619"/>
+        <values>
+          <value code="1">Tôi không có nổi sợ hãi hay lo lắng nào trong cuộc sống</value></values>
+      </variable>
+      
+      <variable ident="79" type="multiple">
+        <name>D1</name>
+        <label>Mua bảo hiểm nhân thọ qua nhân viên tư vấn tại ngân hàng là một cách thức để tham gia bảo hiểm nhân thọ. Hãy chọn ra 5 yếu tố quan trọng khi bạn lựa chọn ngân hàng để mua bảo hiểm nhân thọ?</label>
+        <position finish="636" start="620"/>
+        <values>
+          <value code="1">Danh tiếng ngân hàng tốt</value>
+          <value code="2">Có sự hợp tác với các công ty bảo hiểm uy tín</value>
+          <value code="3">Nổi tiếng với bảo hiểm nhân thọ</value>
+          <value code="4">Có sự quen thuộc, thường xuyên thực hiện các giao dịch với ngân hàng này</value>
+          <value code="5">Thực hiện đúng các cam kết với khách hàng</value>
+          <value code="6">Cung cấp thêm lợi ích cho các sản phẩm ngân hàng khác khi mua bảo hiểm</value>
+          <value code="7">Chất lượng của các dịch vụ sau bán hàng rất tốt</value>
+          <value code="8">Cung cấp nhiều tùy chọn bảo vệ hơn các kênh khác</value>
+          <value code="9">Cung cấp nhiều loại sản phẩm bảo hiểm</value>
+          <value code="10">Nhân viên tư vấn đầy đủ thông tin chi tiết</value>
+          <value code="11">Tư vấn giải pháp minh bạch, dễ hiểu</value>
+          <value code="12">Thuận tiện để trả phí bảo hiểm</value>
+          <value code="13">Thuận tiện để mua trực tuyến / qua ứng dụng di động thay vì đến chi nhánh</value>
+          <value code="14">Cung cấp chương trình giảm giá hấp dẫn cho phí bảo hiểm</value>
+          <value code="15">Cung cấp Lãi suất cao hơn các kênh khác</value>
+          <value code="16">Mức phí đóng khi mua bảo hiểm qua ngân hàng hợp lý</value>
+          <value code="17">Khác, ghi rõ</value></values>
+      </variable>
+      
+      <variable ident="80" type="single">
+        <name>RE_CONT</name>
+        <label>Chúng tôi rất cảm ơn những ý kiến phản hồi của anh/chị. Anh/chị có đồng ý nếu chúng tôi liên lạc lại với anh/chị và mời anh/chị tham gia những cuộc khảo sát tương tự trong tương lai?</label>
+        <position finish="637" start="637"/>
+        <values>
+          <value code="1">Đồng ý</value>
+          <value code="2">Không đồng ý</value>
+        </values>
+      </variable>
+      
+      <variable ident="81" type="multiple">
+        <name>dStraightLined</name>
+        <label>Hidden StraightLined</label>
+        <position finish="651" start="638"/>
+        <values>
+          <value code="1">QID 1</value>
+          <value code="2">QID 2</value>
+          <value code="3">QID 3</value>
+          <value code="4">QID 4</value>
+          <value code="5">QID 5</value>
+          <value code="6">QID 6</value>
+          <value code="7">QID 7</value>
+          <value code="8">QID 8</value>
+          <value code="9">QID 9</value>
+          <value code="10">QID 10</value>
+          <value code="11">QID 11</value>
+          <value code="12">QID 12</value>
+          <value code="13">QID 13</value>
+          <value code="14">QID 14</value></values>
+      </variable>
+      
+      <variable ident="82" type="single">
+        <name>vlist</name>
+        <label>Participant source</label>
+        <position finish="652" start="652"/>
+        <values>
+          <value code="1">TEST (list=6)</value>
+          <value code="2">InnovateMR (list=1)</value>
+          <value code="3">Vision Sampling (list=2)</value>
+          <value code="4">Client Sample - Online (list=3)</value>
+          <value code="5">Client Sample - Offline (list=4)</value>
+        </values>
+      </variable>
+      
+      <variable ident="83" type="quantity">
+        <name>qtime</name>
+        <label>Total Interview Time</label>
+        <position finish="674" start="653"/>
+        <values>
+          <range from="-99999.00" to="999999.00"/>
+        </values>
+      </variable>
+      
+      <variable ident="84" type="single">
+        <name>vdecLang</name>
+        <label>language tracker</label>
+        <position finish="675" start="675"/>
+        <values>
+          <value code="1">English (USA)</value>
+          <value code="2">Vietnamese</value>
+        </values>
+      </variable>
+      
+      <variable ident="85" type="single">
+        <name>vos</name>
+        <label>Operating System</label>
+        <position finish="677" start="676"/>
+        <values>
+          <value code="1">Windows 95</value>
+          <value code="2">Windows 98</value>
+          <value code="3">Windows 8</value>
+          <value code="4">Windows 10</value>
+          <value code="5">Windows 7</value>
+          <value code="6">Windows Vista</value>
+          <value code="7">Windows 2003</value>
+          <value code="8">Windows XP</value>
+          <value code="9">Windows 2000</value>
+          <value code="10">Microsoft Windows NT 4.0</value>
+          <value code="11">Windows ME</value>
+          <value code="12">iPhone/iPad</value>
+          <value code="13">Mac OS X or older</value>
+          <value code="14">Other Mobile</value>
+          <value code="15">Linux, UNIX</value>
+          <value code="16">Other</value>
+        </values>
+      </variable>
+      
+      <variable ident="86" type="single">
+        <name>vbrowser</name>
+        <label>Browser</label>
+        <position finish="679" start="678"/>
+        <values>
+          <value code="1">Opera</value>
+          <value code="2">MS Edge</value>
+          <value code="3">MSIE 11</value>
+          <value code="4">MSIE 10.x</value>
+          <value code="5">MSIE 9.x</value>
+          <value code="6">MSIE 8.x</value>
+          <value code="7">MSIE 7.x</value>
+          <value code="8">MSIE 6.x</value>
+          <value code="9">MSIE 5.x or older</value>
+          <value code="10">Chrome</value>
+          <value code="11">Safari</value>
+          <value code="12">Firefox</value>
+          <value code="13">Other Mozilla or Netscape</value>
+          <value code="14">Mobile</value>
+          <value code="15">Text Browser</value>
+          <value code="16">Other</value>
+        </values>
+      </variable>
+      
+      <variable ident="87" type="single">
+        <name>vmobiledevice</name>
+        <label>Mobile device category</label>
+        <position finish="680" start="680"/>
+        <values>
+          <value code="1">Smartphone</value>
+          <value code="2">Featurephone</value>
+          <value code="3">Tablet</value>
+          <value code="4">Other mobile</value>
+          <value code="5">Desktop</value>
+        </values>
+      </variable>
+      
+      <variable ident="88" type="single">
+        <name>vmobileos</name>
+        <label>Mobile OS</label>
+        <position finish="681" start="681"/>
+        <values>
+          <value code="1">iOS</value>
+          <value code="2">Android</value>
+          <value code="3">Symbian</value>
+          <value code="4">Windows Phone</value>
+          <value code="5">Blackberry</value>
+          <value code="6">Other/Desktop</value>
+        </values>
+      </variable>
+      
+      <variable ident="89" type="character">
+        <name>start_date</name>
+        <label>Survey start time</label>
+        <position finish="697" start="682"/>
+        <size>16</size>
+      </variable>
+      
+      <variable ident="90" type="single">
+        <name>vdropout</name>
+        <label>Last seen question</label>
+        <position finish="699" start="698"/>
+        <values>
+          <value code="1">(INTRO) Xin chào bạn, IPSOS là một trong những công ty chuyên nghiệp về nghiên cứu thị trường tại Việt Nam. Chúng tôi hiện đang tiến hành cuộc thăm dò ý kiến trong vòng 10-15 phút về sức khỏe, quan điểm sống, bảo hiểm và tài chính.
+  Những thông tin bạn cung cấp cho chúng tôi để hoàn tất bản câu hỏi này sẽ được bảo mật và chỉ được dùng cho mục đích nghiên cứu thị trường. Những thông tin này cũng sẽ không được cung cấp cho bất kì một bên nào khác khi chưa có sự cho phép của bạn.
+  Ngược lại, bạn không thảo luận, trao đổi, tiết lộ cho bất kỳ người nào (bao gồm bạn bè và người thân) về tất cả những thông tin liên quan đến sản phẩm thử, khái niệm, ý tưởng, nội dung được đề cập trong cuộc khảo sát.
+  Chúng tôi rất mong Bạn dành chút thời gian cho khảo sát này.</value>
+          <value code="2">(S1a) Bạn sinh năm mấy? Ghi rõ:</value>
+          <value code="3">(S1b) Bạn là...</value>
+          <value code="4">(S1c) Nơi bạn đang sinh sống?</value>
+          <value code="5">(S1d) Thu nhập hàng tháng sau thuế của cả hộ gia đình bạn, bao gồm tất cả các nguồn như: lương, thưởng, trợ cấp, và các thu nhập khác là khoảng bao nhiêu?</value>
+          <value code="6">(S5_1) Bạn có đang sở hữu hợp đồng bảo hiểm nhân thọ không? Bảo hiểm nhân thọ bao gồm các loại bảo hiểm trọn đời, bảo hiểm tích lũy/ tiết kiệm, bảo hiểm liên kết đầu tư, bảo hiểm y tế/ tai nạn/ bệnh hiểm nghèo/bảo hiểm học vấn cho con, hoặc bảo hiểm hưu trí do các công ty bảo hiểm nhân thọ phát hành?</value>
+          <value code="7">(S6a) Câu nào sau đây mô tả đúng nhất vai trò của bạn trong việc tham gia các quyết định liên quan đến tài chính trong gia đình</value>
+          <value code="8">(Q0) Kể tên các công ty bảo hiểm đang có mặt tại thị trường Việt Nam mà bạn biết hoặc từng nghe qua:</value>
+          <value code="9">(Q1) Bạn biết công ty bảo hiểm nhân thọ nào sau đây?</value>
+          <value code="10">(Q1B) Bạn cân nhắc sẽ mua sản phẩm bảo hiểm nhân thọ của công ty nào?</value>
+          <value code="11">(Q1B_1) Bạn dự định sẽ mua bảo hiểm nhân thọ qua kênh nào?</value>
+          <value code="12">(Q1C) Bạn đang sở hữu hợp đồng bảo hiểm nhân thọ của công ty nào dưới đây? Không tính hợp đồng bảo hiểm nhân thọ mà công ty mua cho bạn.</value>
+          <value code="13">(Q1C_1) Bạn đã mua bảo hiểm nhân thọ qua kênh nào?</value>
+          <value code="14">(Q2) Cho từng câu nhận định dưới đây, những công ty BHNT nào phù hợp với câu nhận định. Không quan trọng bạn đã đang hay chưa sở hữu, chúng tôi chỉ muốn biết ý kiến và cảm nhận của bạn về nhãn hiệu này.
+  Bạn có thể chọn 1 hay nhiều nhãn hiệu hay có thể không chọn nhãn hiệu nào nếu bạn thấy không có nhãn hiệu nào phù hợp cả.</value>
+          <value code="15">(P5) Khi cân nhắc mua các sản phẩm bảo hiểm nhân thọ, bạn thường thu thập thông tin qua những nguồn nào sau đây?</value>
+          <value code="16">(P6) Và đâu là nguồn thông tin quan trọng nhất ảnh hưởng đến quyết định mua BHNT của bạn?</value>
+          <value code="17">(S1g) Bạn hiện đang sử dụng dịch vụ của ngân hàng nào dưới đây?</value>
+          <value code="18">(S1h) Vậy đâu là ngân hàng mà bạn giao dịch thường xuyên nhất trong 3 tháng qua?</value>
+          <value code="19">(K1) Đâu là lý do khiến bạn không mua/ không dự định mua thêm bảo hiểm nhân thọ?</value>
+          <value code="20">(T1) Bạn có biết hiện tại Manulife và Techcombank đang có mô hình cộng tác với nhau không?</value>
+          <value code="21">(T2) Việc hợp tác giữa Manulife và Techcombank có ảnh hưởng tới quyết định tham gia sản phẩm bảo hiểm của bạn khi phải giao dịch thông qua đội ngũ tư vấn của Techcombank không?</value>
+          <value code="22">(T3) Trong các lý do sau, đâu là rào cản làm bạn băn khoăn khi lựa chọn mua bảo hiểm Manulife thông qua Techcombank?</value>
+          <value code="23">(A4) Xin cho biết 3 mục tiêu lớn nhất của bạn trong 5 năm tới là gì? Bạn hãy xếp thứ tự 3 mục tiêu này.</value>
+          <value code="24">(A4_OE) Bạn đã đề cập đến một điều khác như một trong 3 mục tiêu hàng đầu của bạn trong 5 năm tới. Ghi rõ.</value>
+          <value code="25">(A5) Và trong vòng 1 năm tới, 3 điều mà bạn lo lắng nhất là gì? Bạn hãy xếp thứ tự 3 điều lo lắng này.</value>
+          <value code="26">(A5_OE) Bạn đã đề cập đến điều gì đó khác như một trong 3 nỗi lo lắng hàng đầu của bạn. Ghi rõ.</value>
+          <value code="27">(D1) Mua bảo hiểm nhân thọ qua nhân viên tư vấn tại ngân hàng là một cách thức để tham gia bảo hiểm nhân thọ. Hãy chọn ra 5 yếu tố quan trọng khi bạn lựa chọn ngân hàng để mua bảo hiểm nhân thọ?</value>
+          <value code="28">(RE_CONT) Chúng tôi rất cảm ơn những ý kiến phản hồi của anh/chị. Anh/chị có đồng ý nếu chúng tôi liên lạc lại với anh/chị và mời anh/chị tham gia những cuộc khảo sát tương tự trong tương lai?</value>
+        </values>
+      </variable>
+      
+      <variable ident="91" type="character">
+        <name>source</name>
+        <label>Captured variable</label>
+        <position finish="759" start="700"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="92" type="character">
+        <name>decLang</name>
+        <label>Captured variable</label>
+        <position finish="819" start="760"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="93" type="character">
+        <name>list</name>
+        <label>Captured variable</label>
+        <position finish="879" start="820"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="94" type="character">
+        <name>userAgent</name>
+        <label>Captured variable</label>
+        <position finish="939" start="880"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="95" type="character">
+        <name>ipAddress</name>
+        <label>Captured variable</label>
+        <position finish="999" start="940"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="96" type="character">
+        <name>fp_etag</name>
+        <label>Captured variable</label>
+        <position finish="1059" start="1000"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="97" type="character">
+        <name>fp_html5</name>
+        <label>Captured variable</label>
+        <position finish="1119" start="1060"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="98" type="character">
+        <name>fp_flash</name>
+        <label>Captured variable</label>
+        <position finish="1179" start="1120"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="99" type="character">
+        <name>fp_browser</name>
+        <label>Captured variable</label>
+        <position finish="1239" start="1180"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="100" type="character">
+        <name>dcua</name>
+        <label>Captured variable</label>
+        <position finish="1299" start="1240"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="101" type="character">
+        <name>url</name>
+        <label>Captured variable</label>
+        <position finish="1359" start="1300"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="102" type="character">
+        <name>session</name>
+        <label>Captured variable</label>
+        <position finish="1419" start="1360"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="103" type="character">
+        <name>uid</name>
+        <label>Captured variable</label>
+        <position finish="1479" start="1420"/>
+        <size>60</size>
+      </variable>
+      
+      <variable ident="104" type="character">
+        <name>tk</name>
+        <label>Captured variable</label>
+        <position finish="1539" start="1480"/>
+        <size>60</size>
+      </variable>
+      </record></survey></sss>
